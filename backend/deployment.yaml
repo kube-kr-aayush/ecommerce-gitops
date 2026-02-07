@@ -18,6 +18,26 @@ spec:
         - name: backend
           image: ecommerce-backend:ci
           imagePullPolicy: IfNotPresent
+
           ports:
             - containerPort: 4000
+
+          env:
+            - name: PORT
+              value: "4000"
+
+            - name: MONGODB_URI
+              value: mongodb://mongo:27017/ecommerce
+
+            - name: NODE_ENV
+              value: production
+
+          # OPTIONAL but good practice
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
+            limits:
+              memory: "256Mi"
+              cpu: "250m"
 
