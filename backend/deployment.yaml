@@ -38,8 +38,11 @@ spec:
         - name: RAZORPAY_KEY_SECRET
           value: dummy_key_secret
          
-         - name: RAZORPAY_OAUTH_TOKEN
+        - name: RAZORPAY_OAUTH_TOKEN
            value: dummy_token
+         
+        - name: ENABLE_RAZORPAY
+           value: "false"
 
 
       resources:
