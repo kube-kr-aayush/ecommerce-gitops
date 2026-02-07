@@ -32,6 +32,13 @@ spec:
         - name: NODE_ENV
           value: production
 
+        - name: RAZORPAY_KEY_ID
+          value: dummy_key_id
+
+        - name: RAZORPAY_KEY_SECRET
+          value: dummy_key_secret
+
+
       resources:
         requests:
           memory: "128Mi"
