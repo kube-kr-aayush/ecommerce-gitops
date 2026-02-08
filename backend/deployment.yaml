@@ -33,6 +33,9 @@ spec:
 
           ports:
             - containerPort: 4000
+          env:
+            - name: MONGO_PORT
+              value: mongodb://mongo:27017/ecommerce
 
           # ✅ ENV FROM (Secret + ConfigMap)
           envFrom:
